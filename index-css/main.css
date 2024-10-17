@@ -1,0 +1,525 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* Info Sections */
+main {
+    flex: 1;
+    position: relative;
+    z-index: 1;
+}
+
+
+.ods-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 30px;
+    background-color: #F8F8F8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.75);
+    border-radius: 46.42px;
+    font-size: 25px;
+    font-weight: 500;
+    color: black;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    top: -70px;
+}
+
+.main-background {
+    background-image: url(img/ods_img_lp01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: block;
+    position: relative;
+    height: 950px;
+    align-content: center;
+}
+
+
+.main-ods {
+    padding: 50px 20px 180px;
+}
+
+.main-container {
+    padding: 0 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.buttom-ods {
+    padding: 30px 0;
+
+}
+
+.ods-text h3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, serif;
+    padding: 10px 0;
+    font-size: 45px;
+    font-weight: 800;
+    color: #2C8EC7;
+}
+
+
+.ods-text p {
+    padding: 10px 0;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: justify;
+    color: rgb(255, 255, 255);
+}
+
+
+#ods-img {
+    padding: 40px 0;
+    width: 47em;
+    /*width: 68%;*/
+    /*width: 780px;*/
+    /*transition: transform 0.3s;*/  /*ROTACIÓN 3D - PRUEBA*/
+}
+
+#ods-img:hover {
+    /*transform: rotateY(180deg);*/  /*ROTACIÓN 3D - PRUEBA*/
+}
+
+.main-ods button {
+    border: none;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border-radius: 3rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 1.2rem 2rem;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.main-ods button:hover {
+    cursor: pointer;
+    transform: scale(1.04);
+    background-color: #F69C0B;
+    color: #fff;
+}
+
+.auto-type {
+    font-family: 'Times New Roman', Times, serif;
+    position: absolute;
+    display: block;
+    padding: 10px 0;
+    font-size: 1.5em;
+    color: white;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.auto-type:hover {
+    color: #F69C0B;
+    transform: scale(1.1);
+}
+
+.info-section {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    /* Espaciado reducido */
+}
+
+.timeline-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    /* Espaciado reducido */
+}
+
+.info-box h2 {
+    margin-top: 25px;
+    /* Ajusta este valor según tus necesidades */
+    font-size: 1.2em;
+    /* Tamaño de fuente */
+    text-align: left;
+}
+
+.info-box {
+    width: 100%;
+    margin: 10px 0;
+    /* Márgenes verticales */
+    padding: 5px;
+    /* Padding reducido */
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    /* Sombra más sutil */
+}
+
+
+.info-box:first-child::before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 5px;
+    /* Ajusta para centrar verticalmente */
+    width: 24px;
+    /* Tamaño del icono */
+    height: 24px;
+    /* Tamaño del icono */
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path stroke="%23FF0000" stroke-width="2" fill="none" d="M12 9c2 0 3.5-1.5 3.5-3.5S14 2 12 2 8.5 3.5 8.5 5.5 10 9 12 9zm0 2c-4 0-10 2-10 6v2h20v-2c0-4-6-6-10-6z"/></svg>');
+    background-size: contain;
+    /* Asegura que el icono se ajuste dentro del cuadro */
+    background-repeat: no-repeat;
+    /* Evita que el icono se repita */
+}
+
+/* Icono de Signo de Pregunta */
+.info-box#que-es::before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    /* Igual que en el primer cuadro */
+    top: 5px;
+    /* Ajusta para centrar verticalmente */
+    width: 24px;
+    /* Tamaño del icono */
+    height: 24px;
+    /* Tamaño del icono */
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" fill="none" stroke="%23FF0000" stroke-width="2"/><path d="M12 17c1.5 0 2.5-1 2.5-2.5S13.5 12 12 12s-2.5 1-2.5 2.5h1c0-.5.5-1 1-1s1 .5 1 1-1 2-2 2z" fill="none" stroke="%23FF0000" stroke-width="2"/><path d="M12 9c-.5 0-1-.5-1-1s.5-1 1-1 1 .5 1 1-.5 1-1 1z" fill="none" stroke="%23FF0000" stroke-width="2"/></svg>');
+    background-size: contain;
+    /* Asegura que el icono se ajuste dentro del cuadro */
+    background-repeat: no-repeat;
+    /* Evita que el icono se repita */
+}
+
+/* Icono de Comentario con Gradiente */
+.info-box#comentario::before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    /* Posición horizontal */
+    top: 5px;
+    /* Posición vertical */
+    width: 24px;
+    /* Tamaño del icono */
+    height: 24px;
+    /* Tamaño del icono */
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><defs><linearGradient id="gradienteRojo" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:%23ff0000;stop-opacity:1"/><stop offset="100%" style="stop-color:%23ffcccc;stop-opacity:1"/></linearGradient></defs><path fill="url(%23gradienteRojo)" d="M21 15.5V4a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v11.5l2-2h14l2 2zm-3 4H6l-2 2h18l-2-2z"/></svg>');
+    background-size: contain;
+    /* Asegura que el icono se ajuste dentro del cuadro */
+    background-repeat: no-repeat;
+    /* Evita que el icono se repita */
+    display: inline-block;
+    /* Asegura que el pseudo-elemento se muestre correctamente */
+}
+
+
+.info-box::after {
+    content: "\1F4CC";
+    /* Icono de tachuela */
+    position: absolute;
+    right: 5px;
+    /* Ajusta la posición */
+    top: 5px;
+    /* Ajusta la posición vertical */
+    font-size: 16px;
+    /* Tamaño del icono reducido */
+    color: #cccccc;
+    /* Color del icono */
+}
+
+
+h2 {
+    font-size: 1.2em;
+    /* Tamaño de fuente reducido */
+    margin: 10px 0;
+    /* Espacio reducido */
+    text-align: left;
+}
+
+p {
+    font-size: 15px;
+    /* Tamaño de fuente ajustado */
+    text-align: left;
+    line-height: 1.4;
+    /* Reduce el interlineado */
+    margin: 5px 0;
+    /* Espacio vertical reducido */
+}
+
+
+/* Sección de información */
+/* Sección de información */
+.info-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    /* Distribuye el espacio entre los elementos */
+    padding: 20px;
+    height: 18em;
+}
+
+.info-section h2 {
+    color: #2C8EC7;
+}
+
+.info-box {
+    width: 20%;
+    /* Ancho del 90% para cada cuadro */
+    background-color: #FFEA7A;
+    margin: 10px;
+    /* Márgenes consistentes */
+    padding: 10px;
+    /* Padding consistente */
+    border-radius: 10px;
+    border: 1px solid #cccccc;
+    /* Bordes para separar cuadros */
+    text-align: center;
+    /* Centra el texto en todos los cuadros */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    /* Sombra del borde con efecto hacia la derecha */
+    position: relative;
+    /* Para colocar el icono correctamente */
+    flex: 1;
+    /* Permite que cada caja ocupe el mismo espacio */
+    margin: 0 70px;
+    /* Espaciado horizontal entre las cajas */
+    text-align: left;
+    /* Alinea todo el texto a la izquierda */
+}
+
+/* Estilo para los botones */
+.toggle-button {
+    background-color: #2C8EC7;
+    /* Color de fondo azul */
+    color: white;
+    /* Color del texto */
+    border: none;
+    /* Sin borde */
+    padding: 12px 24px;
+    /* Espaciado interno */
+    cursor: pointer;
+    /* Cambia el cursor al pasar el mouse */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    font-size: 16px;
+    /* Tamaño de fuente */
+    font-weight: bold;
+    /* Fuente en negrita */
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    /* Efecto de transición */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    /* Sombra del botón */
+}
+
+.toggle-button:hover {
+    background-color: #F69C0B;
+    /* Color más oscuro al pasar el mouse */
+    transform: scale(1.05);
+    /* Agranda el botón al 105% de su tamaño original */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    /* Sombra más intensa al pasar el mouse */
+}
+
+.extra-info {
+    display: none;
+    /* Inicialmente oculto */
+    padding: 10px;
+    background-color: #f9f9f9;
+    /* Color de fondo de la información adicional */
+    border: 1px solid #ddd;
+    /* Borde */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    margin-top: 10px;
+    /* Espacio superior */
+}
+
+.timeline-container {
+    position: relative;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 99.2%;
+    height: 40em;
+    background-image: url('/index-css/img/timeline/world-map-146505_640.png');
+    background-size: 60% 100%;
+    background-position: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.timeline,
+.timeline2 {
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+}
+
+.step {
+    width: 18%;
+    background-color: rgba(255, 255, 255, 0.7);
+    transition: transform 0.65s, box-shadow 0.3s;
+    margin: 0 50px;
+}
+
+.step:hover {
+    transform: scale(1.35);
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 25em;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 25px;
+    border: 1px solid #888;
+    width: 35%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media (max-width: 1500px) {
+    .timeline-container {
+        display: inline;
+        align-items: center;
+        justify-content: center;
+        width: 85%;
+        height: 85%;
+        position: relative;
+        background-size: 100% 75%;
+        background-position: center;
+    }
+
+    .timeline {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .step {
+        width: 95%;
+        margin: 10px 0;
+    }
+
+    .info-section {
+        display: inline-flex;
+        padding: 20px;
+        height: 22em;
+    }
+    
+    .info-box {
+        width: 20em;
+        /* Ancho del 90% para cada cuadro */
+        padding: 10px;
+        /* Padding consistente */
+        margin: 0 33px;
+        /* Espaciado horizontal entre las cajas */
+    }
+}
+
+@media (max-width: 700px) {
+    .main-container {
+        padding: 0 45px;
+        display: inline-block;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .buttom-ods {
+        padding: 20px 0;
+    
+    }
+    
+    .ods-text h3 {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, serif;
+        padding: 10px 0;
+        font-size: 45px;
+        font-weight: 800;
+        color: #2C8EC7;
+    }
+    
+    
+    .ods-text p {
+        padding: 10px 0;
+        font-size: 20px;
+        font-weight: 500;
+        text-align: justify;
+        color: rgb(255, 255, 255);
+    }
+    
+    .img-ods {
+        text-align: center;
+    }
+    
+    #ods-img {
+        position: relative;
+        top: -12em;
+        padding: 0em;
+        width: 35%;
+    }
+
+    .info-section {
+        display: inline-block;
+        padding: 0px;
+        height: 45em;
+    }
+    
+    .info-box {
+        width: 80%;
+        /* Ancho del 90% para cada cuadro */
+        padding: 10px;
+        /* Padding consistente */
+        margin: 10% 0;
+        /* Espaciado horizontal entre las cajas */
+    }
+
+    .timeline-container {
+        display: inline;
+        align-items: center;
+        justify-content: center;
+        width: 85%;
+        height: 85%;
+        position: relative;
+        background-size: 100% 75%;
+        background-position: center;
+    }
+
+    .timeline,.timeline2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .step {
+        width: 70%;
+        margin: 10px 0;
+    }
+
+    .modal {
+        padding-top: 20em;
+    }
+
+    .modal-content {
+        width: 75%;
+    }
+}

@@ -1,0 +1,108 @@
+#check1, #check2, #check3{
+    width: 40px;
+    padding: 20px 0px;
+    font-size: 40px;
+    color: rgb(240, 144, 19);
+    
+}
+
+.main-container {
+    display: flex;
+    
+}
+
+.main-container ul{
+    list-style: none;
+    padding: 0;
+}
+.main-tittle-check li {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.main-tittle{
+    padding: 20px 150px;
+    margin: 40px 100px;
+}
+.main-tittle-check p {
+    font-size: 25px;
+    color: white;
+}
+
+.main-tittle-text1 h2 {
+    font-size: 60px;
+    color: aliceblue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+.main-container{
+    background: linear-gradient(rgba(0, 0, 0, 0.541), rgba(0, 0, 0, 0.411)),
+    url(img/fondo.jpg) ;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 95vh;
+    clip-path: polygon(100% 0%, 100% 84.5%, 0% 100%, 0% 0%);
+}
+
+.main-form{
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    position: absolute;
+    left: 57%;
+    top: 20%;
+}
+
+#nombre, #correo, #telefono, #descripcion{
+    width: 100%; 
+    padding: 1rem;
+    margin-top: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+
+.tittle-contact{
+    text-align: center;
+}
+
+.tittle-contact h2{
+    font-size: 60px;
+    color: #ecb92a;
+}
+
+textarea::placeholder {
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+#extra{
+    background-color: #FFD16F;
+    border-radius: 10px;
+    border-color: #5e5b5b42;
+    width: 40%;
+    height: 40px;         /* altura */
+    font-size: 20px;        /* tamaño de letra*/
+    margin-top: 25px;
+    transition: transform 0.3s ease-in-out;
+
+}
+
+#extra:active{
+    background-color: #ececec;
+    transform: scale(0.9);
+    border-color: aliceblue;
+}
+
+.buton{
+    display: flex;
+    justify-content: center;
+}
